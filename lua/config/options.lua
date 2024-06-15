@@ -5,6 +5,8 @@
 local opt = vim.opt
 
 opt.relativenumber = false
+opt.shiftwidth = 4
+opt.smarttab = true
 
 function LineNumberColors()
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#51B3EC", bold = true })
