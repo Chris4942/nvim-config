@@ -9,4 +9,6 @@ vim.keymap.set(
   { desc = "Hover (or enter hover if already hovering)" }
 )
 
+vim.keymap.set("n", "<leader>fy", "<cmd>let @+ = expand('%:p')<cr>", { desc = "copy filepath to clipboard" })
+
 vim.keymap.set("n", "<leader>n", "<cmd>set nu<cr>", { desc = "set numbers on" })
